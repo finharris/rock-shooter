@@ -133,7 +133,7 @@ while running:
   # handle rock rendering
 
   # randomly spawn rocks
-  if random.randint(1,100) == 69:
+  if random.randint(1,101) == 69:
     rocks.append(Rock([random.randint(player.width,SCREEN_WIDTH-player.width),0], 2))
 
   for rock in rocks:
