@@ -15,6 +15,8 @@ from pygame.locals import (
     K_RIGHT,
     K_ESCAPE,
     K_SPACE,
+    K_a,
+    K_d,
     KEYDOWN,
     KEYUP,
     QUIT,
@@ -63,9 +65,9 @@ class Player(pygame.sprite.Sprite):
     #   self.rect.move_ip(0, -self.movement_speed)
     # if pressed_keys[K_DOWN]:
     #   self.rect.move_ip(0, self.movement_speed)
-    if pressed_keys[K_LEFT]:
+    if pressed_keys[K_LEFT] or pressed_keys[K_a]:
       self.rect.move_ip(-self.movement_speed, 0)
-    if pressed_keys[K_RIGHT]:
+    if pressed_keys[K_RIGHT] or pressed_keys[K_d]:
       self.rect.move_ip(self.movement_speed, 0)
       
     # Keep player on the screen
